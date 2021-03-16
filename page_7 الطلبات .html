@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+    
+    <link href="./css/page_7.css" rel="stylesheet" >
+    <title>الطلبات الصفحة الاولى</title>
+</head>
+<body>
+  <!-- /* ------------------------------------nav bar ---------------------------------- */
+/* ------------------------------------side Bar ---------------------------------- */ -->
+  <nav class="navbar navbar-expand-lg navbar-light" >
+    <div class="container row"></div>
+
+  
+<div class="col-6">
+  <li class="nav-item dropdown" style="display: inline-block;">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Admin
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a id="logOut" class="dropdown-item" href="#">تسجيل الخروج </a>
+     
+  </li>
+<a href="#"><i id ="heart" class="fas fa-user-circle  " style="font-size: 25px;" ></i></a>
+<a href="#" class="notification"><i class="fas fa-bell  " style="font-size: 25px;">  <span class="badge">3</span></i></a>
+</div>
+
+<div class="col-6">
+  <div class="logoicon" >
+ 
+    <i class="fa  fa-navicon" style="font-size:35px; line-height:1.8;"
+     aria-hidden="true"></i>
+   <a href="#">  <img src="./logo.png" style="height: 70px; float: right;"></a>
+  </div>
+
+  <div class="logo">
+  
+    <!-- <a><img src="logo.png" id="logotwo"></a> -->
+    
+  </div>
+
+</div>
+</div>  </nav>
+    <!-- /* ------------------------------------nav bar ---------------------------------- */
+/* ------------------------------------side Bar ---------------------------------- */ -->
+
+<div class="container-fluid"  >
+<Div class="row" >
+  <div class="home col-10"  >
+    <div class="title row ">
+      <div class="col-6" style="text-align: right;">
+     <h4> <i class="fa fa-arrow-right"  ></i>        الطلبات       </h4>
+        <span >الرئيسية </span>  <i class="fa fa-angle-left" ></i>
+        <span class="branch">كل الطلبات  </span> 
+        <!-- <i class="fa fa-angle-left" > </i>   <span class="branch"> اضافة باقة جديد</span> -->
+      
+      </div>
+      <div class="col-6" style="direction: ltr;" >
+        <button class="Add" > اضافة طلب جديد</button>
+        <i class="fas fa-trash-alt" id="remove" title="حذف"></i>
+        <i class="fas fa-filter" id="filter" title="فلترة العناصر "></i>  
+        <button type="button" id="exportsOrders" title="تصدير العناصر"> تصدير  </button>
+  
+      
+  
+     
+      </div>
+    
+    
+    </div>
+
+    <!--  -->
+    <div class="content" style="padding: 20px; direction: rtl;" >
+     <!--  -->
+     <form >
+
+      <div class="form-group row"  >
+
+        <div class="container showShops"   > 
+      
+          <div class="container "  
+          style=" border-radius: 15px;
+           box-shadow: 0px -1px 10px 1px rgb(182, 181, 181); padding: 20px; direction: rtl; " >
+            <!--  -->
+            
+            <!--  -->
+             <table id="example" class="table table-borderless" >
+               <thead >
+                   <tr">
+                       <th></th>
+                       <th>م</th>
+                       <th>رقم الطلب </th>
+                       <th>تاريخ الطلب</th>
+                       <th>اسم المستخدم</th>
+                       <th>اسم المتجر</th>
+                       <th>محافظة المتجر</th>
+                       <th>التصنيف </th>
+                       <th> شركات الشحن </th>
+                       <th>حالة الطلب</th>
+                       <th>Action </th>
+                
+                   </tr>
+               </thead>
+<tbody>
+  <tr>
+    <td class="checkB"><input type="checkbox" name=""></td>
+    <td class="idNum">1</td>
+ 
+    <td class="OrderNum"> 1207    </td>
+    <td class="dateDay"> 
+      <span class="datee">20-07-2021 <span class="houre">09:45 AM</span></span>
+    </td>
+
+  <td class="userName"> 
+    <p class="userNamep">  محمد على  </p>
+    </td>
+
+    <td class="shopName">
+      <p class="shopNamep" >رويال مول </p>
+    </td>
+
+  <td class="city">
+    <p class="city" >  الاسكندرية </p>
+  </td>
+  <td class="sort">
+    <p class="sortp" >ملابس رجالي </p>
+  </td>
+  <td class="copmany">
+    <p class="copmanyp" > ارامكس  </p>
+  </td>
+
+<td class="state">
+
+  <select name="state" class="selectlist" onchange="ssss()"> 
+    <option class="" value="new"selected> جديد </option> 
+    <option class="" value="done" > جاهز </option> 
+    <option class="" value="inWay"> جاري التوصيل </option> 
+    <option class="" value="complet" > مكتمل </option> 
+    <option class="" value="Noo"  > ملغي </option> 
+    <option class="" value="reject"> مسترجع </option> 
+  </select>
+
+</td>
+  
+  
+  
+
+  <td class="action">
+  <a href="#">  <i class="fas fa-compress-arrows-alt"></i></a>
+  </td>
+
+</tr>
+<tr>
+  <td class="checkB"><input type="checkbox" name=""></td>
+  <td class="idNum">1</td>
+
+  <td class="OrderNum"> 1207    </td>
+  <td class="dateDay"> 
+    <span class="datee">20-07-2021 <span class="houre">09:45 AM</span></span>
+  </td>
+
+<td class="userName"> 
+  <p class="userNamep">  محمد على  </p>
+  </td>
+
+  <td class="shopName">
+    <p class="shopNamep" >رويال مول </p>
+  </td>
+
+<td class="city">
+  <p class="city" >  الاسكندرية </p>
+</td>
+<td class="sort">
+  <p class="sortp" >ملابس رجالي </p>
+</td>
+<td class="copmany">
+  <p class="copmanyp" > ارامكس  </p>
+</td>
+
+<td class="state">
+
+<select name="state" class="selectlist" onchange="ssss()" style="background-color: #942a90;"> 
+  <option class="" value="new"> جديد </option> 
+  <option class="" value="done" > جاهز </option> 
+  <option class="" value="inWay" selected> جاري التوصيل </option> 
+  <option class="" value="complet" > مكتمل </option> 
+  <option class="" value="Noo"  > ملغي </option> 
+  <option class="" value="reject"> مسترجع </option> 
+</select>
+
+</td>
+
+
+
+
+<td class="action">
+<a href="#">  <i class="fas fa-compress-arrows-alt"></i></a>
+</td>
+
+</tr>
+
+<tr>
+  <td class="checkB"><input type="checkbox" name=""></td>
+  <td class="idNum">1</td>
+
+  <td class="OrderNum"> 1207    </td>
+  <td class="dateDay"> 
+    <span class="datee">20-07-2021 <span class="houre">09:45 AM</span></span>
+  </td>
+
+<td class="userName"> 
+  <p class="userNamep">  محمد على  </p>
+  </td>
+
+  <td class="shopName">
+    <p class="shopNamep" >رويال مول </p>
+  </td>
+
+<td class="city">
+  <p class="city" >  الاسكندرية </p>
+</td>
+<td class="sort">
+  <p class="sortp" >ملابس رجالي </p>
+</td>
+<td class="copmany">
+  <p class="copmanyp" > ارامكس  </p>
+</td>
+
+<td class="state">
+
+<select name="state" class="selectlist" onchange="ssss()" style="background-color: #942a90;"> 
+  <option class="" value="new"> جديد </option> 
+  <option class="" value="done" selected> جاهز </option> 
+  <option class="" value="inWay" > جاري التوصيل </option> 
+  <option class="" value="complet" > مكتمل </option> 
+  <option class="" value="Noo"  > ملغي </option> 
+  <option class="" value="reject"> مسترجع </option> 
+</select>
+
+</td>
+
+
+
+
+<td class="action">
+<a href="#">  <i class="fas fa-compress-arrows-alt"></i></a>
+</td>
+
+</tr>
+
+<tr>
+  <td class="checkB"><input type="checkbox" name=""></td>
+  <td class="idNum">1</td>
+
+  <td class="OrderNum"> 1207    </td>
+  <td class="dateDay"> 
+    <span class="datee">20-07-2021 <span class="houre">09:45 AM</span></span>
+  </td>
+
+<td class="userName"> 
+  <p class="userNamep">  محمد على  </p>
+  </td>
+
+  <td class="shopName">
+    <p class="shopNamep" >رويال مول </p>
+  </td>
+
+<td class="city">
+  <p class="city" >  الاسكندرية </p>
+</td>
+<td class="sort">
+  <p class="sortp" >ملابس رجالي </p>
+</td>
+<td class="copmany">
+  <p class="copmanyp" > ارامكس  </p>
+</td>
+
+<td class="state">
+
+<select name="state" class="selectlist" onchange="ssss()" style="background-color: #32b23f;"> 
+  <option class="" value="new"> جديد </option> 
+  <option class="" value="done" > جاهز </option> 
+  <option class="" value="inWay" > جاري التوصيل </option> 
+  <option class="" value="complet"selected > مكتمل </option> 
+  <option class="" value="Noo"  > ملغي </option> 
+  <option class="" value="reject"> مسترجع </option> 
+</select>
+
+</td>
+
+
+
+
+<td class="action">
+<a href="#">  <i class="fas fa-compress-arrows-alt"></i></a>
+</td>
+
+</tr>
+
+
+<tr>
+  <td class="checkB"><input type="checkbox" name=""></td>
+  <td class="idNum">1</td>
+
+  <td class="OrderNum"> 1207    </td>
+  <td class="dateDay"> 
+    <span class="datee">20-07-2021 <span class="houre">09:45 AM</span></span>
+  </td>
+
+<td class="userName"> 
+  <p class="userNamep">  محمد على  </p>
+  </td>
+
+  <td class="shopName">
+    <p class="shopNamep" >رويال مول </p>
+  </td>
+
+<td class="city">
+  <p class="city" >  الاسكندرية </p>
+</td>
+<td class="sort">
+  <p class="sortp" >ملابس رجالي </p>
+</td>
+<td class="copmany">
+  <p class="copmanyp" > ارامكس  </p>
+</td>
+
+<td class="state">
+
+<select name="state" class="selectlist" onchange="ssss()" style="background-color: #ff3b30;"> 
+  <option class="" value="new"> جديد </option> 
+  <option class="" value="done" > جاهز </option> 
+  <option class="" value="inWay" > جاري التوصيل </option> 
+  <option class="" value="complet" > مكتمل </option> 
+  <option class="" value="Noo"  > ملغي </option> 
+  <option class="" value="reject"selected> مسترجع </option> 
+</select>
+
+</td>
+
+
+
+
+<td class="action">
+<a href="#">  <i class="fas fa-compress-arrows-alt"></i></a>
+</td>
+
+</tr>
+
+
+
+
+<tr>
+  <td class="checkB"><input type="checkbox" name=""></td>
+  <td class="idNum">1</td>
+
+  <td class="OrderNum"> 1207    </td>
+  <td class="dateDay"> 
+    <span class="datee">20-07-2021 <span class="houre">09:45 AM</span></span>
+  </td>
+
+<td class="userName"> 
+  <p class="userNamep">  محمد على  </p>
+  </td>
+
+  <td class="shopName">
+    <p class="shopNamep" >رويال مول </p>
+  </td>
+
+<td class="city">
+  <p class="city" >  الاسكندرية </p>
+</td>
+<td class="sort">
+  <p class="sortp" >ملابس رجالي </p>
+</td>
+<td class="copmany">
+  <p class="copmanyp" > ارامكس  </p>
+</td>
+
+<td class="state">
+
+<select name="state" class="selectlist" onchange="ssss()" style="background-color: #ff3b30;"> 
+  <option class="" value="new"> جديد </option> 
+  <option class="" value="done" > جاهز </option> 
+  <option class="" value="inWay" > جاري التوصيل </option> 
+  <option class="" value="complet"selected > مكتمل </option> 
+  <option class="" value="Noo" selected > ملغي </option> 
+  <option class="" value="reject"> مسترجع </option> 
+</select>
+
+</td>
+
+
+
+
+<td class="action">
+<a href="#">  <i class="fas fa-compress-arrows-alt"></i></a>
+</td>
+
+</tr>
+
+
+
+
+
+
+
+</tbody>
+       
+           </table>
+       
+           </div>
+           <!--  -->
+
+        </div>
+        
+        </div>
+     
+    </form>
+    <!-- <button class="AddNew" id="AddNewBut" >اضافة</button> -->
+     
+     <!--  -->
+  
+
+    </div>
+    </div>
+  
+  <!-- /* ------------------------------------side Bar ----------
+    ------------------------ */ --> 
+    
+  <div class="wrapper col-2" style="height: 900x;">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar" >
+        <div class="sidebar-header">
+            <h3>الرئيسية</h3>
+          
+        </div>
+  
+        <div id="accordion" role="tablist">
+          <div class="head trader">
+            <div class="" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 التجار 
+                </a>
+              </h5>
+        </div>
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+          <ul class=" list-unstyled" >
+            <li><a href="#">كل التجار </a></li>
+            <li><a href="#">اضافة عنصر جديد</a></li>
+          
+        </ul>
+        </div>
+        </div>
+        <div class="head users">
+          <div class="" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapseOne">
+               المستخدمين 
+              </a>
+            </h5>
+      </div>
+      <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+        <ul class=" list-unstyled" >
+          <li><a href="#">كل المستخدمين </a></li>
+          <li><a href="#">اضافة عنصر جديد</a></li>
+        
+      </ul>
+      </div>
+      </div>
+      <div class="head shops">
+        <div class="" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+             المتاجر 
+            </a>
+          </h5>
+    </div>
+    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+      <ul class=" list-unstyled" >
+        <li><a href="#">كل المتاجر </a></li>
+        <li><a href="#">اضافة عنصر جديد</a></li>
+      
+    </ul>
+    </div>
+    </div>
+    <div class="head products">
+      <div class="" role="tab" id="headingOne">
+        <h5 class="mb-0">
+          <a data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapseOne">
+           المنتجات 
+          </a>
+        </h5>
+  </div>
+  <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+    <ul class=" list-unstyled" >
+      <li><a href="#">كل المنتجات </a></li>
+      <li><a href="#">اضافة عنصر جديد</a></li>
+    
+  </ul>
+  </div>
+  </div>
+  <div class="head Offers">
+    <div class="" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapseOne">
+         العروض 
+        </a>
+      </h5>
+</div>
+<div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+  <ul class=" list-unstyled" >
+    <li><a href="#">كل العروض </a></li>
+    <li><a href="#">اضافة عنصر جديد</a></li>
+  
+</ul>
+</div>
+</div>
+
+<div class="head orders">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse16" aria-expanded="true" aria-controls="collapseOne">
+       شركات الشحن 
+      </a>
+    </h5>
+</div>
+<div id="collapse16" class="collapse " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled " >
+  <li><a href="#" style="font-weight: 600;">كل شركات الشحن </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head orders">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapseOne">
+       الطلبات 
+      </a>
+    </h5>
+</div>
+<div id="collapse6" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled " >
+  <li><a href="#" style="font-weight: 700;">كل الطلبات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head copoon">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapseOne">
+       الكوبونات 
+      </a>
+    </h5>
+</div>
+<div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الكوبونات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head fwateer">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapseOne">
+       الفواتير 
+      </a>
+    </h5>
+</div>
+<div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الفواتير </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head pocket">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapseOne">
+       المحفظة 
+      </a>
+    </h5>
+</div>
+<div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل المحفظة </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head ADS">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapseOne">
+       الاعلانات 
+      </a>
+    </h5>
+</div>
+<div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاعلانات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head place">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapseOne">
+       الاماكن 
+      </a>
+    </h5>
+</div>
+<div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاماكن </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head setting">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse12" aria-expanded="true" aria-controls="collapseOne">
+       الاعدادات 
+      </a>
+    </h5>
+</div>
+<div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاعدادات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head notifications">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse19" aria-expanded="true" aria-controls="collapseOne">
+       الاشعارات 
+      </a>
+    </h5>
+</div>
+<div id="collapse19" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاشعارات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+
+        </div>
+    </nav>
+  
+    <!-- Page Content Holder -->
+  
+  </div>
+</Div>
+</div>
+
+
+
+
+<!-- /* ------------------------------------side Bar ---------------------------------- */ -->
+<!------------------------------------Up side------------------>
+
+ 
+ <!------------------------------------fooooter------------------>   
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script> -->
+ <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+ <script src="./js/jquery.dataTables.js"></script>
+ <script src="./js/dataTables.bootstrap4.min.js"></script>
+ <!-- <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script> -->
+
+ <script src=".\js\newproj.js"></script> 
+
+</body>
+</html> 

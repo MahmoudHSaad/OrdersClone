@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    perspective: 200px;
+ 
+}
+/* ------------------------------------nav bar ---------------------------------- */
+.navbar{
+color: white;
+z-index: 5;
+background-color: #7d2468;
+
+}
+
+.navbar div.logo img{
+width: 100px;
+height: 20px;
+float: right;
+direction: rtl;
+}
+
+.navbar div.logoicon i{
+    font-size: 30px;
+     color:#FFf;
+     float: right;
+     cursor: pointer;
+     padding-left: 20px;
+    
+
+}
+.navbar a{
+    margin-right: 15px;
+    color:#FFf;
+}
+.navbar .dropdown{
+direction: rtl;
+}
+#logOut{
+    color: #7d2468;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+#logOut:hover{
+    background: none;
+    font-weight: 700;
+}
+.notification .badge {
+    position: absolute;
+
+   font-size: 12px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+  }
+/* ------------------------------------nav bar ---------------------------------- */
+/* ------------------------------------side Bar ---------------------------------- */
+
+
+/*
+    DEMO STYLE
+*/
+
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    float: right;
+    text-align: right;
+    padding: 0px;
+
+  
+}
+
+#sidebar {
+ 
+    transition: all 0.3s;
+    padding: 10px;
+    padding-right: 20px;
+ 
+    box-shadow: 0px 0px 5px 0px rgb(167, 165, 165);
+    width: 100%;
+   
+}
+#sidebar .sidebar-header{
+    margin-top: 10px;
+   font-weight: 100;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+[data-toggle="collapse"]:after {
+    display: inline-block;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 15px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      content: "\f054";
+      transform: rotate(-180deg) ;
+      transition: all linear 0.25s;
+      line-height: 25px;
+      float: left;
+      }   
+    [data-toggle="collapse"].collapsed:after {
+      transform: rotate(180deg) ;
+}
+
+#accordion{
+    margin-top: 40px;
+    padding-right: 10px;
+}
+.wrapper .sidoption {
+    margin: 60px 0px 15px 50px;
+}
+.wrapper .head{
+    margin-bottom: 20px;
+}
+.wrapper .head h5 a{
+    color: black;
+    text-decoration: none;
+    font-weight:400 ;
+}
+.wrapper ul{
+    margin: 15px 10px 15px 0px;
+}
+.wrapper ul li a{
+   color: black;
+   text-decoration: none;
+}
+.wrapper ul li a:hover{
+ font-weight: 700;
+ }
+
+
+
+
+/* ------------------------------------side bar ---------------------------------- */
+/* ------------------------------------content ---------------------------------- */
+.container-fluid .row .title{
+    box-shadow: -7px 0px 10px 1px rgb(182, 181, 181); 
+    direction: rtl;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.container-fluid .row .title h4{
+
+font-weight: 400;
+padding-bottom: 10px;
+cursor: pointer;
+}
+.container-fluid .row .title h4 i{
+    margin-left: 10px;
+    color: #7d2468;
+    cursor: pointer;
+}
+.container-fluid .row .title span{
+    margin-right: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.container-fluid .row .title span.branch{
+    margin-right: 10px;
+    color: rgb(160, 26, 194);
+    font-weight: 400;
+    cursor: pointer;
+}
+.container-fluid .row .title button.Add{
+    color:#7d2468;
+    background-color: #fff;
+    border: 2px solid #7d2468;
+    padding: 5px;
+    min-width: 200px;
+    margin-top: 30px;
+    outline-width: 0;
+}
+.container-fluid .row .title button.Add:hover{
+    color:#fff;
+    background-color: #7d2468;
+    border: 2px solid #7d2468;
+
+
+}
+
+.content .form-group label{
+    text-align: right; font-weight: 700; line-height: 2; margin-right: 20px; cursor: pointer;
+}
+.content .form{
+    float: right; width: 100%;
+}
+
+.content  button.AddNew{
+    padding: 5px 30px 5px 30px;
+    color:#7d2468;
+    background-color: #fff;
+    border: 2px solid #7d2468;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    float: right;
+    border-radius: 5px;
+    outline-width: 0;
+}
+
+.content  button.AddNew:hover{
+    color: #fff;
+    background-color: #7d2468;
+}
+textarea{
+    border-radius: 10px;
+    outline-width: 0;
+    border: 1.5px solid rgb(228, 226, 226);
+    float: right; width: 755px; height: 160px; padding: 20px;
+}
+
+.container{
+    margin-bottom: 30px;
+    padding: 20px ;
+    border: 2px solid #7d2468;
+    border-radius:10px;
+    box-shadow: 0px 0px 5px #7d2468;
+   text-align: right;
+}
+.container .row{
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+.container span{
+   color: #7d2468;
+  font-weight: 700;
+   text-align: right;
+}
+.container span.name{
+margin-left: 40px;
+ }
+.container p{
+font-weight: 500;
+text-indent: 25px;
+font-size: 13px;
+ }
+.container p.shopNumber{
+font-weight: 700;
+text-indent: 25px;
+font-size: 16px;
+display: inline;
+margin-left: 15px;
+padding-right:60px;
+ }
+ .containerbodyC{
+     border-left: 2px solid #7d2468;
+ }
+.container a i{
+font-weight: 700;
+font-size: 20px;
+color: #7d2468;
+
+ }
+/* ------------------------------------ content ---------------------------------- */
+
+

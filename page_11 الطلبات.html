@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+    
+    <link href="./css/page_11.css" rel="stylesheet" >
+    <title>الطلبات الصفحة الثانية</title>
+</head>
+<body>
+  <!-- /* ------------------------------------nav bar ---------------------------------- */
+/* ------------------------------------side Bar ---------------------------------- */ -->
+  <nav class="navbar navbar-expand-lg navbar-light" >
+    <div class="container row"></div>
+
+  
+<div class="col-6">
+  <li class="nav-item dropdown" style="display: inline-block;">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Admin
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a id="logOut" class="dropdown-item" href="#">تسجيل الخروج </a>
+     
+  </li>
+<a href="#"><i id ="heart" class="fas fa-user-circle  " style="font-size: 25px;" ></i></a>
+<a href="#" class="notification"><i class="fas fa-bell  " style="font-size: 25px;">  <span class="badge">3</span></i></a>
+</div>
+
+<div class="col-6">
+  <div class="logoicon" >
+ 
+    <i class="fa  fa-navicon" style="font-size:35px; line-height:1.8;"
+     aria-hidden="true"></i>
+   <a href="#">  <img src="./logo.png" style="height: 70px; float: right;"></a>
+  </div>
+
+  <div class="logo">
+  
+    <!-- <a><img src="logo.png" id="logotwo"></a> -->
+    
+  </div>
+
+</div>
+</div>  </nav>
+    <!-- /* ------------------------------------nav bar ---------------------------------- */
+/* ------------------------------------side Bar ---------------------------------- */ -->
+
+<div class="container-fluid"  >
+<Div class="row" >
+  <div class="home col-10"  >
+    <div class="title row ">
+      <div class="col-6" style="text-align: right;">
+     <h4> <i class="fa fa-arrow-right"  ></i>        الطلبات       </h4>
+        <span >الرئيسية </span>  <i class="fa fa-angle-left" ></i>
+        <span class="branch">كل الطلبات  </span> 
+        <i class="fa fa-angle-left" > </i>   <span class="branch"> تفاصيل الطلب</span>
+      
+      </div>
+      <div class="col-6" style="direction: ltr;" >
+        <button class="Add" > اضافة طلب جديد</button>
+      </div>
+    
+    
+    </div>
+
+    <!--  -->
+    <div class="container-fluid formOrderDit"  >
+   <form style="width: 100%; text-align:right">
+     <div class="row odrferFormHead">
+        <div class="col-6" style="text-align: right; padding: 10px;"> 
+           <p class="orderNum"> طلــب رقم 522  </p>
+           <p class="orderdate"> 20-02-2050 08:20 AM</p>
+          </div>
+
+        <div class="col-6" style=" padding: 10px; padding-left: 40px;"> 
+       
+          <i class="fas fa-trash-alt" id="remove" title="حذف" style="font-size: 30px; float: left;color: #eb5454;"></i>
+          <i class="fas fa-edit " id="filter" title="تعديل العناصر " style="font-size: 30px; float: left;"></i> 
+         </div>
+     </div>
+
+     <!--  -->
+     <div class="row odrferFormbody orderInf">
+    <p> تفاصيل الطلب</p>
+
+    <table class="table  table-borderless" style="box-shadow: -5px 5px 10px -5px #7d2468;">
+      <tbody >
+        <tr>
+         
+          <th>اسم المستخدم</th>
+          <td> <input type="text" value="محمود سعد"id="userName"></td>
+      
+          <th>اسم المتجر</th>
+          <td> <input type="text" value="رويال مول" id="shopeName"></td>
+      
+        
+        </tr>
+        <tr>
+         
+          <th> تاريخ الطلب </th>
+          <td> <input type="text" value="20-07-2007"id="orderDate"></td>
+      
+          <th> العنوان</th>
+          <td> <input type="text" value="الاسكندرية سيدي بشر " id="location"></td>
+      
+        
+        </tr>
+        <tr>
+         
+          <th> رقم الطلب </th>
+          <td> <input type="text" value="1995"id="orderNum"></td>
+      
+          <th> رقم الهاتف</th>
+          <td> <input type="text" value="28152452" id="telNum"></td>
+      
+        
+        </tr>
+
+        <tr>
+         
+          <th>  قيمة المبلغ </th>
+          <td> <input type="text" value="88"id="orderPrice"></td>
+      
+          <th>  التصنيف</th>
+          <td> <input type="text" value="ملابس رجالي" id="orderSort"></td>
+      
+        
+        </tr>
+        <tr>
+         
+          <th style="padding-bottom: 30px;">   شركة الشحن </th>
+          <td> <input type="text" value="ارامكس"id="delvCompany"></td>
+      
+          <th>  اسم التاجر</th>
+          <td> <input type="text" value=" محمد سعيد" id="TraName"></td>
+      
+        
+        </tr>
+
+
+
+      </tbody>
+    </table>
+   </div>
+<p class="procuctslist" >المنتجات</p>
+     <div class="col-12 utow"  >
+      
+    <div class="card mb-3 FCard" style="box-shadow: -5px 5px 10px -5px #7d2468;">
+      <div class="row no-gutters">
+        <div class="col-3 imag" style="margin-block-end: auto">
+          <img id="uuu" src="./logo.png" class="card-img" alt="..." style="cursor: pointer;">
+        </div>
+        <div class="col-9">
+          <div class="card-body row">
+          <div class="col-10 con"> 
+              <p style="display: inline-block;" class="card-title">سويت شيرت اسود رجالي  من محل  NoEnD </p> 
+            <div class="row">
+              <div class="col-4">
+                <div class="price">
+                  <p >السعر  <span>500</span> <span class="disCo">900</span></p>
+                  <span class="countt" style="font-size: 16px; font-weight: 700;">الكمية : </span> 
+                  <select style="border-radius: 5px;" >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+  
+                  <h5 style="margin-top: 20px;">العرض خصم 50 % </h5>
+              
+                    
+                </div>  
+              </div>
+              <div class="col-8">
+                <div class="typee" >
+              <label> المقاس</label>
+              <select style="border-radius: 5px;">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>XXXL</option>
+              </select> 
+              <br>
+              <label style="margin-left: 36px;"> اللون</label>
+              <select style="border-radius: 5px;">
+                <option>ابيض</option>
+                <option>اسود</option>
+                <option>زيتي</option>
+                <option>رمادي</option>
+                <option>اخرى</option>
+               
+              </select>
+          
+                </div> 
+              </div>
+            </div>
+
+
+
+
+    
+            </div>   
+          </div>
+        </div>
+      </div>
+      
+
+</div>
+</div>
+<p class="procuctslist" >تفاصيل المبلغ</p>
+<div class="row odrferFormbody pricedit">
+
+
+  <table class="table  table-borderless" style="box-shadow: -5px 5px 10px -5px #7d2468;" >
+    <tbody >
+      <tr>
+        <th> سعر المنتج</th>
+        <th></th>
+        <th id="prodctPrice">500 EGP</th>
+      </tr>
+
+      <tr>
+        <th>كوبون الخصم 20% </th>
+        <td style="font-weight: 500;"> رقم الكوبون <span style="color: blue; cursor: pointer;">888</span></td>
+        <th id="DisAccountCard">50 EGP</th>
+      </tr>
+      <tr>
+        <th>الشحن</th>
+        <td> <img src="./logo.png" style="cursor: pointer;"></td>
+        <th id="delvCompany">35 EGP</th>
+      </tr>
+      <tr>
+        <th>الدفع عند الاستلام</th>
+        <td></td>
+        <th id="dorw">30 EGP</th>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th><h4>اجمالي الطلب</h4></th>
+        <td> </td>
+        <th><h4 id="totalprice">515 EGP</h4></th>
+      </tr>
+    </tfoot>
+  </table>
+ </div>
+
+ <p class="procuctslist" >بيانات التوصيل </p>
+<div class="row odrferFormbody delevaryInf">
+  <table class="table table-borderless   " style="box-shadow: -5px 5px 10px -5px #7d2468;" >
+    <tbody >
+      <tr >
+        <th>  الاسم : </th>
+        <td id="userName" > محمد علي</td>
+      </tr>
+      <tr>
+        <th > رقم الهاتف : </th>
+        <td id="teleNum"> 1234567890 </td>
+      </tr>
+      <tr>
+        <th >العنوان :  </th>
+        <td id="location" > الاسكندريةشارع الاسكندرية الاسكندرية </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <table class="table  table-borderless delevaryInf" style="box-shadow: -5px 5px 10px -5px #7d2468;" >
+    <tbody >
+      <tr>
+        <th> عنوان استلام الطلب من التاجر </th>
+
+      </tr>
+      <tr>
+      
+        <td id="trLocation" style="padding-bottom: 30px;" >
+          <span style="padding-bottom: 30px; padding-right: 20px;">الاسكندرية -- ميامي -- شارع جمال عبد الناصر </span></td>
+      </tr>
+
+
+    </tbody>
+
+  </table>
+ </div>
+
+ <p class="procuctslist" >سجل تحديثات الطلب </p>
+<div class="row odrferFormbody stateInf">
+
+
+  <table class="table  table-borderless" style="box-shadow: -5px 5px 10px -5px #7d2468;" >
+    <thead>
+      <tr>
+        <th>حالة الطلب </th>
+        <th class="Refe"> التحديث </th>
+        <th>التاريخ</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td>جديد</td>
+        <td>تم تغير حالة الطلب الى *جديد</td>
+        <td>12-08-2020 08:18 PM</td>
+        <td>منذ 3 شهور </td>
+      </tr>
+      <tr>
+        <td>جاهز</td>
+        <td>تم تغير حالة الطلب الى *جاهز</td>
+        <td>12-08-2020 08:18 PM</td>
+        <td>منذ 3 شهور </td>
+      </tr>
+      <tr>
+        <td>جاري التوصيل</td>
+        <td>تم تغير حالة الطلب الى *جاري التوصيل</td>
+        <td>12-08-2020 08:18 PM</td>
+        <td>منذ 3 شهور </td>
+      </tr>
+      <tr>
+        <td> مكتمل</td>
+        <td>تم تغير حالة الطلب الى  *مكتمل</td>
+        <td>12-08-2020 08:18 PM</td>
+        <td>منذ 3 شهور </td>
+      </tr>
+      <tr>
+        <td> مسترجع</td>
+        <td>تم تغير حالة الطلب الى  *مسترجع</td>
+        <td>12-08-2020 08:18 PM</td>
+        <td>منذ 3 شهور </td>
+      </tr>
+    </tbody>
+
+  </table>
+ </div>
+
+ <!-- <p class="procuctslist" style="color: #eb5454; " > طلب استرجاع </p> -->
+ <div class="rejectOrder">
+  <!-- <p id="">لم تتم الموافقة عليه</p>
+  <p id="rejectOrderDate">تاريخ الطلب    <span>20-06-1995</span> </p>  -->
+<div class="rejectOrderCoussImg">
+  <p id="">سبب ذلك</p>
+  <p id="rejectOrderCouss">
+    <img src="./ddd.jpg" >
+    السبب السبب السبب السبب السبب السبب السبب
+     السبب السبب السبب السبب السبب السبب  السبب السبب السبب 
+     السبب السبب السبب السبب السبب السبب  السبب السبب السبب
+   </p>
+</div>
+   </div>
+
+ <div class="row odrferFormbody statusInf ">
+
+<ul class="status" >
+ 
+  <li id="new">جديد</li>
+  <li id="done" >جاهز</li>
+  <li id="onWay" >جاري التوصيل</li>
+  <li id="complet">مكتمل</li>
+  <li id="reject" >ملغي</li>
+  <li id="rejectTT">مسترجع</li>
+
+
+
+</ul>
+  </div>
+ 
+
+
+
+  </form>
+    </div>
+
+
+</div>
+  
+  <!-- /* ------------------------------------side Bar ----------
+    ------------------------ */ --> 
+    
+  <div class="wrapper col-2" style="height: 900x;">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar" >
+        <div class="sidebar-header">
+            <h3>الرئيسية</h3>
+          
+        </div>
+  
+        <div id="accordion" role="tablist">
+          <div class="head trader">
+            <div class="" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 التجار 
+                </a>
+              </h5>
+        </div>
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+          <ul class=" list-unstyled" >
+            <li><a href="#">كل التجار </a></li>
+            <li><a href="#">اضافة عنصر جديد</a></li>
+          
+        </ul>
+        </div>
+        </div>
+        <div class="head users">
+          <div class="" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapseOne">
+               المستخدمين 
+              </a>
+            </h5>
+      </div>
+      <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+        <ul class=" list-unstyled" >
+          <li><a href="#">كل المستخدمين </a></li>
+          <li><a href="#">اضافة عنصر جديد</a></li>
+        
+      </ul>
+      </div>
+      </div>
+      <div class="head shops">
+        <div class="" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+             المتاجر 
+            </a>
+          </h5>
+    </div>
+    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+      <ul class=" list-unstyled" >
+        <li><a href="#">كل المتاجر </a></li>
+        <li><a href="#">اضافة عنصر جديد</a></li>
+      
+    </ul>
+    </div>
+    </div>
+    <div class="head products">
+      <div class="" role="tab" id="headingOne">
+        <h5 class="mb-0">
+          <a data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapseOne">
+           المنتجات 
+          </a>
+        </h5>
+  </div>
+  <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+    <ul class=" list-unstyled" >
+      <li><a href="#">كل المنتجات </a></li>
+      <li><a href="#">اضافة عنصر جديد</a></li>
+    
+  </ul>
+  </div>
+  </div>
+  <div class="head Offers">
+    <div class="" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapseOne">
+         العروض 
+        </a>
+      </h5>
+</div>
+<div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+  <ul class=" list-unstyled" >
+    <li><a href="#">كل العروض </a></li>
+    <li><a href="#">اضافة عنصر جديد</a></li>
+  
+</ul>
+</div>
+</div>
+
+<div class="head orders">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse16" aria-expanded="true" aria-controls="collapseOne">
+       شركات الشحن 
+      </a>
+    </h5>
+</div>
+<div id="collapse16" class="collapse " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled " >
+  <li><a href="#" style="font-weight: 600;">كل شركات الشحن </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head orders">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapseOne">
+       الطلبات 
+      </a>
+    </h5>
+</div>
+<div id="collapse6" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled " >
+  <li><a href="#" style="font-weight: 700;">كل الطلبات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head copoon">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse7" aria-expanded="true" aria-controls="collapseOne">
+       الكوبونات 
+      </a>
+    </h5>
+</div>
+<div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الكوبونات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head fwateer">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse8" aria-expanded="true" aria-controls="collapseOne">
+       الفواتير 
+      </a>
+    </h5>
+</div>
+<div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الفواتير </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head pocket">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse9" aria-expanded="true" aria-controls="collapseOne">
+       المحفظة 
+      </a>
+    </h5>
+</div>
+<div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل المحفظة </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head ADS">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse10" aria-expanded="true" aria-controls="collapseOne">
+       الاعلانات 
+      </a>
+    </h5>
+</div>
+<div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاعلانات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head place">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapseOne">
+       الاماكن 
+      </a>
+    </h5>
+</div>
+<div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاماكن </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head setting">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse12" aria-expanded="true" aria-controls="collapseOne">
+       الاعدادات 
+      </a>
+    </h5>
+</div>
+<div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاعدادات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+<div class="head notifications">
+  <div class="" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" href="#collapse19" aria-expanded="true" aria-controls="collapseOne">
+       الاشعارات 
+      </a>
+    </h5>
+</div>
+<div id="collapse19" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+<ul class=" list-unstyled" >
+  <li><a href="#">كل الاشعارات </a></li>
+  <li><a href="#">اضافة عنصر جديد</a></li>
+
+</ul>
+</div>
+</div>
+
+        </div>
+    </nav>
+  
+    <!-- Page Content Holder -->
+  
+  </div>
+</Div>
+</div>
+
+
+
+
+<!-- /* ------------------------------------side Bar ---------------------------------- */ -->
+<!------------------------------------Up side------------------>
+
+ 
+ <!------------------------------------fooooter------------------>   
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script> -->
+ <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+ <script src="./js/jquery.dataTables.js"></script>
+ <script src="./js/dataTables.bootstrap4.min.js"></script>
+ <!-- <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script> -->
+
+ <script src=".\js\newproj.js"></script> 
+
+</body>
+</html> 

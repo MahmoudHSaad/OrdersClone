@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    perspective: 200px;
+ 
+}
+/* ------------------------------------nav bar ---------------------------------- */
+.navbar{
+color: white;
+z-index: 5;
+background-color: #7d2468;
+
+}
+
+.navbar div.logo img{
+width: 100px;
+height: 20px;
+float: right;
+direction: rtl;
+}
+
+.navbar div.logoicon i{
+    font-size: 30px;
+     color:#FFf;
+     float: right;
+     cursor: pointer;
+     padding-left: 20px;
+    
+
+}
+.navbar a{
+    margin-right: 15px;
+    color:#FFf;
+}
+.navbar .dropdown{
+direction: rtl;
+}
+#logOut{
+    color: #7d2468;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+#logOut:hover{
+    background: none;
+    font-weight: 700;
+}
+.notification .badge {
+    position: absolute;
+
+   font-size: 12px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+  }
+/* ------------------------------------nav bar ---------------------------------- */
+/* ------------------------------------side Bar ---------------------------------- */
+
+
+/*
+    DEMO STYLE
+*/
+
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    float: right;
+    text-align: right;
+    padding: 0px;
+
+  
+}
+
+#sidebar {
+ 
+    transition: all 0.3s;
+    padding: 10px;
+    padding-right: 20px;
+ 
+    box-shadow: 0px 0px 5px 0px rgb(167, 165, 165);
+    width: 100%;
+   
+}
+#sidebar .sidebar-header{
+    margin-top: 10px;
+   font-weight: 100;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+[data-toggle="collapse"]:after {
+    display: inline-block;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 15px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      content: "\f054";
+      transform: rotate(-180deg) ;
+      transition: all linear 0.25s;
+      line-height: 25px;
+      float: left;
+      }   
+    [data-toggle="collapse"].collapsed:after {
+      transform: rotate(180deg) ;
+}
+
+#accordion{
+    margin-top: 40px;
+    padding-right: 10px;
+}
+.wrapper .sidoption {
+    margin: 60px 0px 15px 50px;
+}
+.wrapper .head{
+    margin-bottom: 20px;
+}
+.wrapper .head h5 a{
+    color: black;
+    text-decoration: none;
+    font-weight:400 ;
+}
+.wrapper ul{
+    margin: 15px 10px 15px 0px;
+}
+.wrapper ul li a{
+   color: black;
+   text-decoration: none;
+}
+.wrapper ul li a:hover{
+ font-weight: 700;
+ }
+
+
+
+
+/* ------------------------------------side bar ---------------------------------- */
+/* ------------------------------------content ---------------------------------- */
+.container-fluid .row .title{
+    box-shadow: -7px 0px 10px 1px rgb(182, 181, 181); 
+    direction: rtl;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.container-fluid .row .title h4{
+
+font-weight: 400;
+padding-bottom: 10px;
+cursor: pointer;
+}
+.container-fluid .row .title h4 i{
+    margin-left: 10px;
+    color: #7d2468;
+    cursor: pointer;
+}
+.container-fluid .row .title span{
+    margin-right: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.container-fluid .row .title span.branch{
+    margin-right: 10px;
+    color: rgb(160, 26, 194);
+    font-weight: 400;
+    cursor: pointer;
+}
+.container-fluid .row .title button.Add{
+    color:#7d2468;
+    background-color: #fff;
+    border: 2px solid #7d2468;
+    padding: 5px;
+    min-width: 200px;
+    margin-top: 30px;
+    outline-width: 0;
+}
+.container-fluid .row .title button.Add:hover{
+    color:#fff;
+    background-color: #7d2468;
+    border: 2px solid #7d2468;
+
+
+}
+
+
+
+/* ------------------------------------ content ---------------------------------- */
+
+/* ------------------------------------ content Table---------------------------------- */
+/* ------------------------------------ content Table---------------------------------- */
+#remove{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 22px;
+    color: #7d2468;
+    cursor: pointer;
+}
+#filter{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 22px;
+    color: #7d2468;
+    cursor: pointer;
+    
+}
+#exportsOrders{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+    color: #7d2468;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: 700;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 2px rgb(231, 231, 231);
+    
+}
+.formOrderDit{
+  
+    padding: 20px; direction: rtl; display: inline-flex;
+    margin-top: 10px;
+}
+
+
+.container-fluid .odrferFormHead .orderNum{
+    font-size: 22px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+.container-fluid .odrferFormHead .orderdate{
+    font-size: 12px;
+    font-weight: 700;
+    padding-right: 25px;
+}
+.container-fluid .odrferFormHead i{
+
+    margin-top: 10px;
+    padding-right: 25px;
+}
+.container-fluid .odrferFormbody{
+width: 100%;
+ text-align: center;
+ margin-bottom: 50px;
+}
+.container-fluid .odrferFormbody p{
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 440px;
+ }
+.container-fluid .odrferFormbody table{
+  background-color:#ededed;
+  border-radius: 20px;
+  width: 80%;
+  margin-right: 100px;
+ }
+ .pricedit table tbody tr{
+    border-bottom: 2px solid rgb(179, 179, 179);
+ }
+ .pricedit table tbody td img{
+    width: 50px;border-radius: 7px;
+ }
+ table.delevaryInf tbody td {
+ 
+    text-align: right;
+ }
+ table.delevaryInf tbody th {
+    max-width: 0px;
+    text-align: center;
+ }
+.container-fluid .odrferFormbody table th{
+    width: 150px;
+    text-align: right;
+    padding-right: 20px;
+ }
+ table td{
+    width: 300px;
+ }
+
+.container-fluid .odrferFormbody table td input{
+    width: 250px;
+    border-radius: 5px;
+    padding: 2px;
+    float: right;
+    outline-width: 0;
+    border: 1px solid;
+    padding-right: 10px;
+    font-weight: 400;
+ }
+/* --------------------------------- -----------------------------------  */
+
+form p.procuctslist{
+    margin-bottom: 20px;
+    margin-right: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #a8a8a8;
+}
+
+
+
+  .utow {
+      margin-bottom: 50px;
+  }
+  .utow .card{
+    direction: rtl;
+
+    background-color:#ededed;
+    border-radius: 20px;
+    width: 82%;
+    margin-right: 70px;
+    border: none;
+    padding: 5px;
+    padding-right: 15px;
+       }
+    
+ .utow .card .row {
+    text-align: right;
+    }
+    
+ .utow .card .row div.imag img {     
+  border-radius: 10px;
+  width: 80%;
+  height: 150px;
+  float: right; 
+  margin-top: 10px;    
+}
+
+.utow .card .row .card-body div.con{
+    flex: none;
+    max-width: none;
+  margin-right: -40px;
+    margin-top: -15px;
+}
+    
+.utow .card .row .card-body div.con .price{
+    width: 200px;
+}
+
+.utow .card .row .card-body div.con .typee{
+float: right;
+direction: rtl;
+padding-right: 50px;
+}
+.utow .card .row .card-body div.con .typee label{
+font-weight: 700;
+margin-left: 20px;
+}
+.utow .card .row .card-body div.con .typee select{
+font-weight: 500;
+width:200px;
+margin-bottom: 20px;
+padding: 2px;
+}
+                
+.utow .card .row .card-body div.con .price p{
+    font-size: 18px; 
+    font-weight: 700;
+}
+.utow .card .row .card-body div.con .price p span.disCo{
+    text-decoration: line-through; font-weight: 400;
+}
+                 
+.utow .card .row .card-body div.con .price p span.countt{
+  font-size: 16px; font-weight: 700;
+}
+.utow .card .row .card-body div.con select{
+    width: 80px; outline-width: 0;
+}
+                 
+.utow .card .row .card-body div.con p {
+    
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 0;
+    
+}
+.utow .card .row .card-body p span {
+    margin-right: 5%;
+    font-weight: 700;
+    font-size: 13px;
+   
+}
+
+
+.container-fluid .odrferFormbody.stateInf table td{
+font-weight: 400;
+    text-align: right;
+    padding-right: 10px;
+    padding-right: 20px;
+    font-size: 15px;
+    border-top: 2px solid #b3b3b3
+}
+
+.container-fluid .odrferFormbody.stateInf table thead tr th {
+text-align: right;
+padding-right: 20px;}
+.container-fluid .odrferFormbody.stateInf table thead tr th.Refe {
+width: 550px;}
+.container-fluid .odrferFormbody.delevaryInf table tbody tr th {
+    max-width: 15%;
+}
+.container-fluid .odrferFormbody.delevaryInf table tbody tr td {
+    width: 85%; text-align: right;
+}
+
+
+/*  */
+.statusInf ul{
+    margin-right: 120px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.statusInf ul li{
+  
+    font-weight: 700;
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 4px rgb(211, 210, 210);
+    cursor: pointer;
+  
+}
+.statusInf ul li.liActive{
+    color: #fff;
+    background-color: #7d2468;
+}
+form .rejectOrder p#rejectOrderCouss {
+  font-weight: 500;
+ text-indent: 15px;
+  font-size: 13px;
+}
+form .rejectOrder p#rejectOrderDate {
+  font-weight: 500;
+  
+  font-size: 12px;
+}
+form .rejectOrder p#rejectOrderDate span {
+color: #7d2468;
+margin-right: 20px;
+font-weight: 500;
+}
+form .rejectOrder {
+
+margin-right: 100px;
+width: 70%;
+padding: 10px;
+margin-bottom: 20px;
+font-size: 15px;
+font-weight: 700;
+   
+}
+form .rejectOrder .rejectOrderCoussImg {
+padding: 15px;
+border: 2px solid #7d2468;
+border-radius: 15px;
+}
+form .rejectOrder .rejectOrderCoussImg img {
+
+border-radius: 10px;
+width: 100px; 
+height: 100px;
+float: left;
+margin-top: -40px;
+}
+
+.selectNew {
+    background:#e68619;
+}
+.selectDone {
+    background:#942a90;
+}
+.selectInWay { 
+    background:#942a90;
+}
+.selectComplet {
+    background:#32b23f;
+}
+.selectReject {
+  
+    background:#ff3b30;
+}
+.selectRejectTT {
+    background:#ff3b30;
+ 
+}
+ 
+
+    
+                 

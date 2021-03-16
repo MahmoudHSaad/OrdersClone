@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    perspective: 200px;
+ 
+}
+/* ------------------------------------nav bar ---------------------------------- */
+.navbar{
+color: white;
+z-index: 5;
+background-color: #7d2468;
+
+}
+
+.navbar div.logo img{
+width: 100px;
+height: 20px;
+float: right;
+direction: rtl;
+}
+
+.navbar div.logoicon i{
+    font-size: 30px;
+     color:#FFf;
+     float: right;
+     cursor: pointer;
+     padding-left: 20px;
+    
+
+}
+.navbar a{
+    margin-right: 15px;
+    color:#FFf;
+}
+.navbar .dropdown{
+direction: rtl;
+}
+#logOut{
+    color: #7d2468;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+#logOut:hover{
+    background: none;
+    font-weight: 700;
+}
+.notification .badge {
+    position: absolute;
+
+   font-size: 12px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+  }
+/* ------------------------------------nav bar ---------------------------------- */
+/* ------------------------------------side Bar ---------------------------------- */
+
+
+/*
+    DEMO STYLE
+*/
+
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    float: right;
+    text-align: right;
+    padding: 0px;
+
+  
+}
+
+#sidebar {
+ 
+    transition: all 0.3s;
+    padding: 10px;
+    padding-right: 20px;
+ 
+    box-shadow: 0px 0px 5px 0px rgb(167, 165, 165);
+    width: 100%;
+   
+}
+#sidebar .sidebar-header{
+    margin-top: 10px;
+   font-weight: 100;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+[data-toggle="collapse"]:after {
+    display: inline-block;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 15px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      content: "\f054";
+      transform: rotate(-180deg) ;
+      transition: all linear 0.25s;
+      line-height: 25px;
+      float: left;
+      }   
+    [data-toggle="collapse"].collapsed:after {
+      transform: rotate(180deg) ;
+}
+
+#accordion{
+    margin-top: 40px;
+    padding-right: 10px;
+}
+.wrapper .sidoption {
+    margin: 60px 0px 15px 50px;
+}
+.wrapper .head{
+    margin-bottom: 20px;
+}
+.wrapper .head h5 a{
+    color: black;
+    text-decoration: none;
+    font-weight:400 ;
+}
+.wrapper ul{
+    margin: 15px 10px 15px 0px;
+}
+.wrapper ul li a{
+   color: black;
+   text-decoration: none;
+}
+.wrapper ul li a:hover{
+ font-weight: 700;
+ }
+
+
+
+
+/* ------------------------------------side bar ---------------------------------- */
+/* ------------------------------------content ---------------------------------- */
+.container-fluid .row .title{
+    box-shadow: -7px 0px 10px 1px rgb(182, 181, 181); 
+    direction: rtl;
+    padding: 10px;
+}
+.container-fluid .row .title h4{
+
+font-weight: 400;
+padding-bottom: 10px;
+cursor: pointer;
+}
+.container-fluid .row .title h4 i{
+    margin-left: 10px;
+    color: #7d2468;
+    cursor: pointer;
+}
+.container-fluid .row .title span{
+    margin-right: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.container-fluid .row .title span.branch{
+    margin-right: 10px;
+    color: rgb(160, 26, 194);
+    font-weight: 400;
+    cursor: pointer;
+}
+.container-fluid .row .title button.Add{
+    color:#7d2468;
+    background-color: #fff;
+    border: 2px solid #7d2468;
+    padding: 5px;
+    min-width: 200px;
+    margin-top: 30px;
+    outline-width: 0;
+}
+.container-fluid .row .title button.Add:hover{
+    color:#fff;
+    background-color: #7d2468;
+    border: 2px solid #7d2468;
+
+
+}
+
+
+#example_length {
+    float: right;
+   position: relative;
+}
+#example_length label{
+    display: inline-flex
+}
+#example_length label select{
+   margin-right: 15px;
+   margin-left: 10px;
+}
+#example_filter{
+    float: right;
+    min-width: 400px;
+    margin-bottom: 20px;
+}
+
+.dataTables_empty{
+    color: red;
+    text-align: center;
+}
+  
+  #example_filter label input  {
+    min-width: 400px;
+    display: inline-block;
+    border: 2px solid #7d2468;
+    outline-width: 0;
+  }
+
+
+.col-md-5{
+    display: none;
+}
+.dataTables_paginate{
+    margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+  .dataTables_paginate ul li{
+    border: none;
+    outline-width: 0;
+  }
+
+.paginate_button {
+    color: #7d2468;
+    background-color: #fff;
+  border: none;
+}
+
+.page-item.active .page-link  {
+    color: #fff;
+    background-color: #7d2468;
+    outline-width: 0;
+   
+}
+.paginate_button  a:hover{
+    color: #FFf;
+    background-color: #7d2468;
+}
+.paginate_button  a{
+    color: #7d2468;
+    text-decoration: none;
+}
+
+th{
+text-align: center;
+
+}
+
+td{
+    word-break: normal;
+    text-align: center;
+    font-size: 12px;
+   font-weight: 500;
+}
+td.dit{
+
+max-width: 270px;
+
+}
+
+td.checkB{
+  
+    line-height: 5;
+    cursor: pointer;
+}
+td.idNum{
+    line-height: 5;
+    font-weight: 700;
+    cursor: pointer;
+   
+}
+td.dit .ditp{
+margin-top: -8px;
+
+}
+td p.num{
+    line-height: 5;
+    font-weight: 900;
+  
+}
+td div.rate{
+    line-height:3.5;
+}
+td.star{
+    max-width: 150px;
+}
+td.action{
+    line-height:5;
+    cursor: pointer;
+}
+td.action a{
+color: black;
+}
+/* .toggle-group{
+
+   border-radius: 7px;
+   outline-width: 0;
+   cursor: pointer;
+   border: 2px solid #7d2468;
+   color: #7d2468;
+   background-color: #bff3e9;
+} */
+td.state form{
+margin-top: 10px;
+}
+.toggle-on{
+    color: #7d2468;
+    background-color: #fff;
+}
+.toggle-on:hover{
+    color: #fff;
+    background-color: #aa94a5;
+}
+.toggle-off{
+ color: #7d2468;
+ background-color: #ccc;
+
+
+}
+.toggle-off:hover{
+   
+}
+.toggle-handle{
+    background: #7d2468;
+}
+.btn-primary {
+    border: 1px solid #7d2468;
+
+    color: none;
+}
+.btn-primary:active  {
+  background: red;
+}
+.btn-primary:hover {
+    color: none;
+ 
+    border-color:none;
+    border: 1px solid #7d2468;
+}
+.btn-default{
+
+}
+
+
+
+
+
+
+   /* 5starts ******************************************/
+   .rate {
+    float: right;
+    margin-right: 30px;
+    height: 46px;
+    padding: 0 10px;
+    
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    direction: rtl;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:17px;
+    color:#ccc;
+  
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+    direction: rtl;
+}
+    /* 5starts *****************************************/
+    
+/* ------------------------------------ content ---------------------------------- */
+
+
